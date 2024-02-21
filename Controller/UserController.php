@@ -9,6 +9,10 @@ class PessoaController
         include 'View/modules/user/FormUser.php';
 
     }
+
+    public static function save(){
+        var_dump($_POST);
+    }
 }
 
 ?>
