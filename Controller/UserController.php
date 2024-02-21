@@ -11,7 +11,13 @@ class PessoaController
     }
 
     public static function save(){
-        var_dump($_POST);
+        include 'Model/UserModel.php';
+        $model = new PessoaModel();
+        $model->$nome = $_POST['nome'];
+        $model->$cpf = $_POST['cpf'];
+        $model->$nascimento = $_POST['nascimento'];
+        $model->save();
+        
     }
 }
 
