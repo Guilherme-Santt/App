@@ -1,28 +1,22 @@
 <?php
-include 'Controller/UserController.php';
-
 $url = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
 
-switch($url){
+switch($url)
+{
     case '/':
-        echo "Página inicial";
-    break;
-        
-    case '/user':
-        PessoaController::index();
+        echo "teste";
     break;
 
-    case '/user/form':
-        PessoaController::form();
+    case '/pessoa':
+        echo "teste";
     break;
 
-    case '/user/form/save':
-        PessoaController::save();
+    case '/pessoa/form':
+        echo "teste";
     break;
 
     default:
-        echo "Erro 404";
+        echo "teste";
     break;
-                            
 }
 ?>
